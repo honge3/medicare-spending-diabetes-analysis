@@ -22,11 +22,9 @@ Comparing CMS spending and CDC disease burden data to identify spending vs. need
 
 ## Visual Showcase
 
-```
 Notice that the scatter plot below is in a funnel shape, indicating that statistical noise shrinks as sample size increases, and that LA County stands out within the most reliable tier.
 
 ![Spending Residual vs. County Size, by Confidence Tier](residual_by_confidence.png)
-```
 
 ## Business Context & Data Sources
 
@@ -68,7 +66,7 @@ Notice that the scatter plot below is in a funnel shape, indicating that statist
 
 **High-confidence tier / South Florida cluster:**
 > Looking at the chart under Total Dollar Impact, you'll notice LA County is at the top with ~$2.01B and has a high per-capita residual at ~$3,708, which warrants further exploration. Under Per-Capita Residuals, five Florida counties, three in the Tri-County area (3 out of the top 6 on the list), and two in Tampa Bay/Central Florida take up half of the list. Meanwhile, Wichita TX, Grayson TX, Suffolk NY, and Bossier LA are counties outside the FL cluster that also warrant a look. All of these counties are spending well above what disease burden predicts and justify further investigation. Due to the high sample size of medical beneficiaries in these counties, these findings are much less likely due to statistical noise and therefore are considered in a high-confidence tier.
->
+
 | County | Per-Capita Residual | Total Dollar Impact |
 |---|---|---|
 | FL-Miami-Dade | $4,244 | $392,825,419 |
@@ -84,7 +82,7 @@ Notice that the scatter plot below is in a funnel shape, indicating that statist
 
 **Medium-confidence tier / rural TX-OK-LA-KS cluster:**
 > The medium tier table is more evenly distributed compared to the high tier table with TX, LA, and OK contributing 3 counties each and KS with one. This tier's counties trend more rural, consistent with their lower beneficiary counts (1,424–7,506, vs. >7,506 for the high-confidence tier).
->
+
 | County | Per-Capita Residual | Total Dollar Impact |
 |---|---|---|
 | TX-Runnels | $5,606 | $9,608,100 |
@@ -100,7 +98,7 @@ Notice that the scatter plot below is in a funnel shape, indicating that statist
 
 **Underserved counties / Pacific-West pattern:**
 > In the high confidence underserved table below, you'll notice that HI, AK, OR, WA, and CA are on the list, primarily Pacific and West coast states. The underspending matters because these counties potentially have underserved patients and access to care issues. It's also notable that 6 of 10 counties (OR–Klamath, OR–Douglas, WA–Stevens, CA–Humboldt, CA–Siskiyou, HI–Hawaii) are geographically isolated and trend rural. A similar Western pattern holds for the lower tiers, trending more interior/Southwest, with more noise.
->
+
 | County | Per-Capita Residual | Total Dollar Impact |
 |---|---|---|
 | HI-Hawaii | -$3,647 | -$77,119,000 |
