@@ -2,7 +2,10 @@
 
 Comparing CMS spending and CDC disease burden data to identify spending vs. need mismatches in 2,954 counties
 
-`Python` `pandas` `scikit-learn` `Jupyter`
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
 ## TL;DR
 
