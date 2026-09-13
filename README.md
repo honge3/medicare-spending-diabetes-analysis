@@ -65,11 +65,11 @@ Notice that the scatter plot below is in a funnel shape, indicating that statist
 > result = pd.merge(places_clean, cms_clean, left_on='CountyFIPS', right_on='BENE_GEO_CD', how='inner')
 > ```
 >
-> **Regression robustness check.** Distinct, discrete confidence tiers based on beneficiary counts (BENES_OM_CNT) was a decision that implied "trust larger counties more." This could either be justified simplification or it could miss important data a continuous approach would capture.
+> **Regression robustness check.** Using distinct, discrete confidence tiers based on beneficiary counts (BENES_OM_CNT) was a decision that implied "trust larger counties more." This could either be a justified simplification or it could miss important data a continuous approach would capture.
 > ```python
 > model_wls.fit(X, y, sample_weight=result['BENES_OM_CNT'])
 > ```
->  To address this concern, a second linear regression was fit using the same predictor and target, but weighted by BENES_OM_CNT via sample_weight in scikit-learn's .fit(). This is a weighted least squares approach, which gives counties with larger Medicare populations more influence over the fitted line.
+>  To address this concern, a second linear regression was fit using the same predictor and target, but weighted by BENES_OM_CNT via sample_weight in scikit-learn's .fit(). This is a weighted least squares approach, which, gives counties with larger Medicare populations more influence over the fitted line.
 > Result: WLS coefficients (slope 327.62, intercept 8493.84) shifted modestly from the original OLS coefficients (343.60, 7821.91) which is consistent with smaller, noisy counties pulling the unweighted line slightly. The top 10 high-confidence money-pit counties were identical for both methods which is evidence that the headline findings aren't an artifact of how the trust levels were bucketed.
 > 
 ## Detailed Findings & Nuance
