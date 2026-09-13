@@ -65,7 +65,7 @@ Notice that the scatter plot below is in a funnel shape, indicating that statist
 > result = pd.merge(places_clean, cms_clean, left_on='CountyFIPS', right_on='BENE_GEO_CD', how='inner')
 > ```
 >
-> **Regression robustness check.** Distinct, discrete confidence tiers based on beneficiary counts (BENES_OM_CNT) was a decision that implied "trust larger counties more." Is this a justified simplification or could it be missing something a continuous approach would catch?  
+> **Regression robustness check.** Distinct, discrete confidence tiers based on beneficiary counts (BENES_OM_CNT) was a decision that implied "trust larger counties more." This could either be justified simplification or it could miss important data a continuous approach would capture.
 > ```python
 > model_wls.fit(X, y, sample_weight=result['BENES_OM_CNT'])
 > ```
