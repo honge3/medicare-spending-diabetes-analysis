@@ -144,7 +144,7 @@ Notice that the scatter plot below is in a funnel shape, indicating that statist
 |---|---|
 | `README.md` | This file — project overview, methodology, and findings |
 | `medicare_diabetes_spending_analysis.ipynb` | Full analysis notebook: data cleaning, regression, residual and confidence-tier analysis |
-| `merged_diabetes_spending_2023.csv` | Cleaned, merged dataset (PLACES + CMS) produced by the notebook |
-| `residual_by_confidence.png` | Exported figure referenced in the Visual Showcase section |
+| `merged_diabetes_spending_2023.csv` | Cleaned, merged dataset (PLACES + CMS) produced by the notebook. Included for convenience; regenerated automatically if you re-run the notebook. |
+| `residual_by_confidence.png` | Scatterplot referenced in the Visual Showcase section |
 
 > Raw source files (PLACES, CMS) aren't included in this repo — see Business Context & Data Sources above for links to download them directly.
